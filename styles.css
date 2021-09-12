@@ -1,12 +1,18 @@
 *{
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #777;
+    
 }
-html{
+.html{
     margin: 0;
     padding: 0%;
+   
+    background-size: 100%;
+    background-repeat: no-repeat;
+      
 }
+/**
 .nav ul{
     margin: 0%;
 }
@@ -32,25 +38,202 @@ html{
 .container-1{
     display: flex;
     
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
 }
+#cont-back{
+    background-image: url(images/background.jpg) ;  
+}
+
 
 .box-1{
     flex: 1;
     order: 1;
     flex-basis: 30%;
-    height: 400pt;
+    height: 800pt;
     text-align: right;
     background-repeat: no-repeat;
     justify-content: space-between;
     padding: 2%;
-    background-image:  url(../images/06.png);
+    
+   /** background-image:  url(images/1625467.jpg);**/
+     
+}
+.flex-back{
+    background-image:  url(images/1625467.jpg);  
     
 }
+
 .box-2{
     flex: 1;
     order: 2;
     align-self: flex-start;
     flex-basis: 70%;
     padding: 2%;
-    height: 400pt;
+    height: 1000pt;
+    /**background-image: url(images/background.jpg);*//
+
 }
+.nav-links{
+    
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
+}
+.nav-links ul li a{
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+    font-size: 40px;
+}
+#nav-link ul li a{
+    color: black;
+}
+.nav-links ul li::after{
+content: "";
+width: 0%;
+height: 2px;
+background: #f44336;
+display: block;
+margin: auto;
+transition: 0.5s;
+} 
+.nav-links ul li:hover::after{
+    width: 100%;
+    
+}
+    
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    transform: translate(-55%,-40%);
+    text-align: center;
+    
+}
+.text-box h1{
+    font-size: 62px;
+    color: #fff;
+    
+    
+}
+.text-box a{
+    font-size: 55px;
+    color: #fff;
+    text-decoration: none;
+}
+/**
+.text-box a::after{
+    content: "";
+    width: 0%;
+    height: 5spx;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    } 
+    .text-box a:hover::after{
+        width: 19%;
+    }*/
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    font-size: 5px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #49BEAE;
+    background:#49BEAE;
+    transition: 1s;
+}
+/** this code helps for the web to display correctly in a smaller screen
+i havent figured it out yet*/
+@media(max-width: 750px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: blocks      ;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align:left;
+        z-index: 2;
+
+    }
+}
+
+.title-header{
+    font-size: 50px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+    
+}
+
+
+.boxx1{
+    background: cornsilk;
+}
+
+
+.back-img{
+    height: 5em;
+}
+.iframe{
+    background-color: aquamarine;
+}
+
+.button{
+    display: inline-flex;
+    height: 50px;
+    padding: 0;
+    background: #009578;
+    border: none;
+    outline: none;
+    border-radius: 5px; 
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    cursor: pointer;
+    width: 20%;
+   
+
+}
+.button:hover{
+    background: #008168;
+}
+.button:active{
+    background: #006e58;
+}
+.button__text{
+ color: black;
+ align-items: center;
+ 
+}
+
+
+
+
+
+
+
