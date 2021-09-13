@@ -159,8 +159,7 @@ transition: 0.5s;
     background:#49BEAE;
     transition: 1s;
 }
-/** this code helps for the web to display correctly in a smaller screen
-i havent figured it out yet*/
+
 @media(max-width: 750px){
     .text-box h1{
         font-size: 20px;
@@ -230,7 +229,6 @@ i havent figured it out yet*/
  align-items: center;
  
 }
-
 
 
 
