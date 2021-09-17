@@ -43,14 +43,20 @@
     
 }
 #cont-back{
-    background-image: url(images/background.jpg) ;  
+    background-image: url(images/back.jpg) ;
+    background-size:100%;  
+}
+#about-back{
+   /* background-image: url(images/about-back.jpg);*/
+    background-repeat: repeat-x;
+    background-color: black;
 }
 
 
 .box-1{
     flex: 1;
     order: 1;
-    flex-basis: 30%;
+    flex-basis: 13%;
     height: 800pt;
     text-align: right;
     background-repeat: no-repeat;
@@ -69,7 +75,7 @@
     flex: 1;
     order: 2;
     align-self: flex-start;
-    flex-basis: 70%;
+    flex-basis: 87%;
     padding: 2%;
     height: 1000pt;
     /**background-image: url(images/background.jpg);*//
@@ -160,29 +166,10 @@ transition: 0.5s;
     transition: 1s;
 }
 
-@media(max-width: 750px){
-    .text-box h1{
-        font-size: 20px;
-    }
-    .nav-links ul li{
-        display: blocks      ;
-    }
-    .nav-links{
-        position: absolute;
-        background: #f44336;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: 0;
-        text-align:left;
-        z-index: 2;
-
-    }
-}
 
 .title-header{
     font-size: 50px;
-    color: #fff;
+    color: rgb(94, 94, 94);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   
     
@@ -231,7 +218,44 @@ transition: 0.5s;
 }
 
 
+.down-btn ul li{
+    display: inline;
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 6%;
+    
+  }
+.down-btn ul li a{
+    text-decoration: none;
+}
+.down-btn{
+    padding-bottom: 10%;
+    
+}
+.down-btn ul  :hover{
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+.down-btn ul::after{
+    background-color: black;
+}
 
+#About-text-box{
+    color: white;
 
-
-
+}
+#About-text-box h1{
+    font-family: inherit;
+    font-size: 30;
+}
+.comment input, .comment textarea{
+    width: 40%;
+    padding: 15px;
+    margin: 17px;
+    border: 1px solid #ccc;
+}
