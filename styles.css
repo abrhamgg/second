@@ -265,6 +265,7 @@ transition: 0.5s;
    height: 100vh; 
    display: flex;
    justify-content: center;
+   margin-top: 29%;
    
 }
 .centerdiv a{
@@ -281,10 +282,15 @@ transition: 0.5s;
 .centerdiv a i{
    font-size: 30px; 
 }
-.centerdiv a li{
+.centerdiv a i{
     transition: all 0.3s;
 }
-.centerdiv a li :hover{
+.centerdiv a :hover {
         transform: scale(1.4);
         background-color: green;
+}
+.table{
+    margin-top: 25%;
+    margin-left: 15%;
+    
 }
