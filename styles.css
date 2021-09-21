@@ -232,6 +232,7 @@ transition: 0.5s;
   }
 .down-btn ul li a{
     text-decoration: none;
+    color: #fff;
 }
 .down-btn{
     padding-bottom: 10%;
@@ -258,4 +259,32 @@ transition: 0.5s;
     padding: 15px;
     margin: 17px;
     border: 1px solid #ccc;
+}
+
+.centerdiv{
+   height: 100vh; 
+   display: flex;
+   justify-content: center;
+   
+}
+.centerdiv a{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    margin: 10px;
+    margin-top: 20px;
+    line-height: 110px;
+
+}
+.centerdiv a i{
+   font-size: 30px; 
+}
+.centerdiv a li{
+    transition: all 0.3s;
+}
+.centerdiv a li :hover{
+        transform: scale(1.4);
+        background-color: green;
 }

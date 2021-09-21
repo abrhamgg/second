@@ -29,6 +29,13 @@
 .b1 p{
     color: white;
 }
+.b1:hover{
+    background-color: rgb(20, 20, 1);
+    
+}
+.b1 p:hover{
+    color: black;
+}
 
 .b1 img{
     border-radius: 6%;
